@@ -1,0 +1,10 @@
+#!/bin/python3
+import sys
+count=0
+S = input().strip()
+S=S.upper()
+SOS='SOS'
+for i in range(len(S)):
+    if(S[i]!=SOS[i%3]):
+        count=count+1
+print (count)
